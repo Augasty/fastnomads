@@ -1,0 +1,1 @@
+blog link: https://codingnomads.co/blog/python-fastapi-tutorial
