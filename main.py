@@ -11,6 +11,8 @@ app = FastAPI()
 SQLALCHEMY_DATABASE_URL = 'sqlite:///mydb.db'
 engine = create_engine(SQLALCHEMY_DATABASE_URL, echo=True, future=True)
 SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
+
+# declarative_base() is a factory function that constructs a base class for declarative class definitions (which is assigned to the Base variable here)
 Base = declarative_base()
 
 def get_db():
